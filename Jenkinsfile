@@ -33,6 +33,7 @@ pipeline {
                 echo "doing delivery stuff.."
                 '''
                 helloWorld(name: 'tuguldur', dayOfWeek: 'monday')
+                helloWorldExternal(dayOfWeek: "Monday", name: "Tuguldur Turkhuu")
             }
         }
     }
