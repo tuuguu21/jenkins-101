@@ -32,8 +32,8 @@ pipeline {
                 sh '''
                 echo "doing delivery stuff.."
                 '''
+                helloWorld(name: 'tuguldur', dayOfWeek: 'monday')
             }
-            helloWorld(name: 'tuguldur', dayOfWeek: 'monday')
         }
     }
 }
