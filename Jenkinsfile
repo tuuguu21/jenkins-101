@@ -1,3 +1,4 @@
+@Library('shared-library') _
 pipeline {
     agent {
         label 'docker-agent-python'
@@ -32,6 +33,7 @@ pipeline {
                 echo "doing delivery stuff.."
                 '''
             }
+            helloWorld(name: 'tuguldur', dayOfWeek: 'monday')
         }
     }
 }
